@@ -43,7 +43,10 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem "sassc-rails"
+
+# Use Bootstrap
+gem "bootstrap", '~> 5.1.3'
 
 # Use HAML instead of ERB
 gem 'haml'

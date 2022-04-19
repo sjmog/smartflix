@@ -8,3 +8,239 @@ Processing by HomepageController#index as HTML
 Completed 200 OK in 170ms (Views: 166.0ms | ActiveRecord: 0.0ms | Allocations: 104661)
 
 
+Started GET "/" for ::1 at 2022-04-19 11:35:11 +0100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 2.2ms | Allocations: 3619)
+  Rendered layout layouts/application.html.haml (Duration: 59.0ms | Allocations: 50358)
+Completed 200 OK in 64ms (Views: 60.3ms | ActiveRecord: 0.0ms | Allocations: 56836)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:35:17 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 0.4ms | Allocations: 84)
+  Rendered layout layouts/application.html.haml (Duration: 12.3ms | Allocations: 3910)
+Completed 200 OK in 17ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 7378)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:35:19 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 0.4ms | Allocations: 82)
+  Rendered layout layouts/application.html.haml (Duration: 8.5ms | Allocations: 2651)
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 6101)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:38:02 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 0.2ms | Allocations: 82)
+  Rendered layout layouts/application.html.haml (Duration: 24.1ms | Allocations: 15095)
+Completed 200 OK in 28ms (Views: 24.6ms | ActiveRecord: 0.0ms | Allocations: 18552)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:38:11 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 0.2ms | Allocations: 82)
+  Rendered layout layouts/application.html.haml (Duration: 5.7ms | Allocations: 2585)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 6029)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:38:24 +0100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 2.0ms | Allocations: 3619)
+  Rendered layout layouts/application.html.haml (Duration: 51.6ms | Allocations: 47197)
+Completed 200 OK in 57ms (Views: 53.1ms | ActiveRecord: 0.0ms | Allocations: 53675)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:38:56 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 0.3ms | Allocations: 84)
+  Rendered layout layouts/application.html.haml (Duration: 25.8ms | Allocations: 13952)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms | Allocations: 17404)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap/scss/bootstrap.
+        on line 2:1 of app/assets/stylesheets/application.scss
+>> @import 'bootstrap/scss/bootstrap';
+
+   ^
+):
+     7:     = csrf_meta_tags
+     8:     = csp_meta_tag
+     9: 
+    10:     = stylesheet_link_tag "application", "data-turbo-track": "reload"
+    11:     = javascript_importmap_tags
+    12: 
+    13:   %body
+  
+app/assets/stylesheets/application.scss:2
+app/views/layouts/application.html.haml:10
+Started GET "/" for ::1 at 2022-04-19 11:44:28 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 1.8ms | Allocations: 3618)
+  Rendered layout layouts/application.html.haml (Duration: 3231.5ms | Allocations: 142024)
+Completed 200 OK in 3250ms (Views: 3246.2ms | ActiveRecord: 0.0ms | Allocations: 148502)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:47:01 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 4.7ms | Allocations: 3615)
+  Rendered layout layouts/application.html.haml (Duration: 16.1ms | Allocations: 11983)
+Completed 200 OK in 23ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 15991)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:47:02 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 0.1ms | Allocations: 154)
+  Rendered layout layouts/application.html.haml (Duration: 3.4ms | Allocations: 5862)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 9309)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:47:39 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 4.6ms | Allocations: 3600)
+  Rendered layout layouts/application.html.haml (Duration: 2587.8ms | Allocations: 41456)
+Completed 200 OK in 2595ms (Views: 2590.4ms | ActiveRecord: 0.0ms | Allocations: 45442)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:47:42 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 0.1ms | Allocations: 154)
+  Rendered layout layouts/application.html.haml (Duration: 3.8ms | Allocations: 5914)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 9366)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:48:10 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 6.3ms | Allocations: 3874)
+  Rendered layout layouts/application.html.haml (Duration: 22.1ms | Allocations: 12276)
+Completed 200 OK in 29ms (Views: 25.2ms | ActiveRecord: 0.0ms | Allocations: 16272)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:48:10 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 0.1ms | Allocations: 154)
+  Rendered layout layouts/application.html.haml (Duration: 4.3ms | Allocations: 5908)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 9354)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:49:56 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 5.3ms | Allocations: 4338)
+  Rendered layout layouts/application.html.haml (Duration: 21.8ms | Allocations: 12769)
+Completed 200 OK in 27ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 16755)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:49:56 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 0.1ms | Allocations: 154)
+  Rendered layout layouts/application.html.haml (Duration: 4.4ms | Allocations: 5926)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 9379)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:51:03 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 6.2ms | Allocations: 4345)
+  Rendered layout layouts/application.html.haml (Duration: 18.4ms | Allocations: 12751)
+Completed 200 OK in 28ms (Views: 21.3ms | Allocations: 16737)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:51:11 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 0.4ms | Allocations: 154)
+  Rendered layout layouts/application.html.haml (Duration: 2600.4ms | Allocations: 36572)
+Completed 200 OK in 2605ms (Views: 2601.3ms | Allocations: 40009)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:53:06 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 6.6ms | Allocations: 4116)
+  Rendered layout layouts/application.html.haml (Duration: 2622.2ms | Allocations: 42210)
+Completed 200 OK in 2628ms (Views: 2623.6ms | Allocations: 46203)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:53:53 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 6.2ms | Allocations: 4130)
+  Rendered layout layouts/application.html.haml (Duration: 18.1ms | Allocations: 12577)
+Completed 200 OK in 26ms (Views: 20.7ms | Allocations: 16562)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:56:08 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 5.3ms | Allocations: 4609)
+  Rendered layout layouts/application.html.haml (Duration: 24.4ms | Allocations: 13056)
+Completed 200 OK in 32ms (Views: 27.2ms | Allocations: 17033)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:56:42 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 6.0ms | Allocations: 4864)
+  Rendered layout layouts/application.html.haml (Duration: 17.0ms | Allocations: 13320)
+Completed 200 OK in 25ms (Views: 19.5ms | Allocations: 17304)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:56:43 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 0.4ms | Allocations: 179)
+  Rendered layout layouts/application.html.haml (Duration: 10.8ms | Allocations: 5988)
+Completed 200 OK in 14ms (Views: 11.5ms | Allocations: 9424)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:56:56 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 6.3ms | Allocations: 5000)
+  Rendered layout layouts/application.html.haml (Duration: 17.4ms | Allocations: 13438)
+Completed 200 OK in 28ms (Views: 19.7ms | Allocations: 17414)
+
+
