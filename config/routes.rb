@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root "homepage#index"
+  root "shows#index"
 end
