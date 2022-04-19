@@ -1,0 +1,14 @@
+setup:
+  addons:
+    - plan: heroku-postgresql
+      as: DATABASE
+build:
+  docker:
+    web: Dockerfile
+  config:
+    BUNDLE_INSTALL_ARGS: --jobs 10 --retry=3
+    RAILS_ENV: production
+    # Put extra deps here
+    INSTALL_DEPENDENCIES: curl postgresql-client
+run:
+  web: bundle exec puma -C config/puma.rb
