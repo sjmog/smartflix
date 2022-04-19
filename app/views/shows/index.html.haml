@@ -1,5 +1,15 @@
-%h1 Smartflix
+.jumbotron
+  .container
+    %h1.display-4 Smartflix
+    %p.lead Find out more about your favourite movies.
 
-- @shows.each do |show|
-  %h2= show.title
+.container
+  .Shows
+    - @shows.each do |show|
+      .Show.card
+        %img.card-img-top{ src: 'https://via.placeholder.com/150' }
+        .card-body
+          %h5.card-title= "#{show.title} (#{show.release_year})"
+          %h6.card-subtitle=show.type
+          %p.card-text=show.description
   
