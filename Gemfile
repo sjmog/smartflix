@@ -45,6 +45,9 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 gem "sassc-rails"
 
+# Use Bootstrap
+gem "bootstrap", '~> 5.1.3'
+
 # Use HAML instead of ERB
 gem 'haml'
 

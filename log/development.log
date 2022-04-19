@@ -36,3 +36,67 @@ Processing by ShowsController#index as HTML
 Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 6101)
 
 
+Started GET "/" for ::1 at 2022-04-19 11:38:02 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 0.2ms | Allocations: 82)
+  Rendered layout layouts/application.html.haml (Duration: 24.1ms | Allocations: 15095)
+Completed 200 OK in 28ms (Views: 24.6ms | ActiveRecord: 0.0ms | Allocations: 18552)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:38:11 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 0.2ms | Allocations: 82)
+  Rendered layout layouts/application.html.haml (Duration: 5.7ms | Allocations: 2585)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 6029)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:38:24 +0100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 2.0ms | Allocations: 3619)
+  Rendered layout layouts/application.html.haml (Duration: 51.6ms | Allocations: 47197)
+Completed 200 OK in 57ms (Views: 53.1ms | ActiveRecord: 0.0ms | Allocations: 53675)
+
+
+Started GET "/" for ::1 at 2022-04-19 11:38:56 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 0.3ms | Allocations: 84)
+  Rendered layout layouts/application.html.haml (Duration: 25.8ms | Allocations: 13952)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms | Allocations: 17404)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap/scss/bootstrap.
+        on line 2:1 of app/assets/stylesheets/application.scss
+>> @import 'bootstrap/scss/bootstrap';
+
+   ^
+):
+     7:     = csrf_meta_tags
+     8:     = csp_meta_tag
+     9: 
+    10:     = stylesheet_link_tag "application", "data-turbo-track": "reload"
+    11:     = javascript_importmap_tags
+    12: 
+    13:   %body
+  
+app/assets/stylesheets/application.scss:2
+app/views/layouts/application.html.haml:10
+Started GET "/" for ::1 at 2022-04-19 11:44:28 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 1.8ms | Allocations: 3618)
+  Rendered layout layouts/application.html.haml (Duration: 3231.5ms | Allocations: 142024)
+Completed 200 OK in 3250ms (Views: 3246.2ms | ActiveRecord: 0.0ms | Allocations: 148502)
+
+
