@@ -68,6 +68,27 @@ RSpec.describe Shows do
         expect { Shows.import(test_path) }.to change { Show.count }.by(10)
         expect { Shows.import(test_path) }.not_to change { Show.count }
       end
+
+      it 'logs as it goes' do
+        shows = Shows.from(test_path)
+        mock_stdout = double(print: nil)
+
+        expect(mock_stdout).to receive(:print).with("Importing #{ shows.length } shows...\n")
+
+        shows.each_with_index do |show, index|
+          expect(mock_stdout).to receive(:print).with("Importing #{ show.title } (#{ index + 1 } / #{ shows.length })\n")
+        end
+
+        expect(mock_stdout).to receive(:print).with("Successfully imported #{ shows.length } shows!\n")
+
+        Shows.import(test_path, logging: true, logger: mock_stdout)
+      end
+
+      it "Adds a dummy date if one does not exist in the CSV" do
+        Shows.import('./spec/fixtures/date_missing_netflix_title.csv')
+
+        expect(Show.last.date_added).to eq Time.at(0).to_date
+      end
     end
   end
 
