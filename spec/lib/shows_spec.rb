@@ -37,10 +37,10 @@ RSpec.describe Shows do
 
     describe '.import' do
       it 'Creates database entries for each show in the CSV' do
-        mock_db_model = double(:Show, create: nil)
+        mock_db_model = double(:Show, find_or_create_by: nil)
         Shows.import(test_path, model: mock_db_model)
 
-        expect(mock_db_model).to have_received(:create).exactly(Shows.from(test_path).length).times
+        expect(mock_db_model).to have_received(:find_or_create_by).exactly(Shows.from(test_path).length).times
       end
 
       it 'Configures the database entry correctly' do
@@ -62,6 +62,11 @@ RSpec.describe Shows do
           expect(db_show.listed_in).to eq csv_show.listed_in
           expect(db_show.description).to eq csv_show.description
         end
+      end
+
+      it 'does not duplicate' do
+        expect { Shows.import(test_path) }.to change { Show.count }.by(10)
+        expect { Shows.import(test_path) }.not_to change { Show.count }
       end
     end
   end

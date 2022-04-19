@@ -23,7 +23,7 @@ class Shows
     CSV.foreach(path, headers: true) do |row|
       show = build_show(row)
 
-      model.create(
+      model.find_or_create_by(
         show_type: show.type,
         title: show.title,
         director: show.director,
